@@ -1,3 +1,5 @@
+package tonyryan;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -79,7 +81,7 @@ public class Cells {
 		case "INT":
 			System.out.println(INT(split));
 			break;
-		default:s
+		default:
 			break;
 		}
 		
