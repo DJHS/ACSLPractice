@@ -1,18 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hexfractions;
 
 import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.*;
 
-/**
- *
- * @author derek
- */
 public class Hexadecimal {
 
     static final int MAX_PRECISE_LENGTH = 13;
