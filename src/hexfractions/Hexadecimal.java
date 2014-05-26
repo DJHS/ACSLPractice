@@ -47,7 +47,7 @@ public class Hexadecimal {
         int count = 0;
         while ((fracPart.abs().doubleValue() > SIGMA) && count < MAX_COUNT) {
             multiplied = fracPart.multiply(SIXTEEN);
-            wholePart = fracPart.multiply(SIXTEEN).toBigInteger();
+            wholePart = multiplied.toBigInteger();
             rep.add(HEXVALS.get(wholePart.intValue()));
             fracPart = multiplied.subtract(new BigDecimal(wholePart));
             count++;
