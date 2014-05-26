@@ -11,7 +11,7 @@ public class Main {
 //        Scanner scan = new Scanner(new File(args[0]));
         Scanner scan = new Scanner(System.in);
         while(scan.hasNextLine()){
-            System.out.println(new Hexadecimal(new BigDecimal(Double.parseDouble(scan.nextLine()))));
+            System.out.println(new Hexadecimal(new BigDecimal(scan.nextLine())));
         }
     }
 }
