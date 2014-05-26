@@ -73,7 +73,7 @@ public class Hexadecimal {
         }
     }
 
-    public void subList(int repeatingIndex) {
+    void subList(int repeatingIndex) {
         while (repeatingIndex < rep.size() && repeatingIndex != -1) {
             rep.remove(repeatingIndex);
         }
