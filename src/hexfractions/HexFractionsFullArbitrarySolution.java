@@ -35,13 +35,13 @@ public class HexFractionsFullArbitrarySolution {
         BigInteger wholePart;
         BigDecimal fracPart = dec;
         int count = 0;
-        do{ 
+        while((fracPart.compareTo(BigDecimal.ZERO) != 0) && count < MAX_COUNT){
             dec = fracPart.multiply(SIXTEEN);
             wholePart = dec.toBigInteger();
             fracPart = dec.subtract(new BigDecimal(wholePart));
             rep.add(HEXVALS.get(wholePart.intValue()));
             count++; 
-        }while((fracPart.compareTo(BigDecimal.ZERO) != 0) && count < MAX_COUNT);
+        }
         
         int repeatingIndex = getRepeatingIndex();
         if (repeatingIndex == -1) {
