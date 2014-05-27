@@ -3,7 +3,11 @@ package hexfractions;
 import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.*;
-
+@Deprecated /* See HexFractionsFullArbitrarySolution for a fully 
+               arbitrary-precision solution to Hex Fractions, this solution
+               depends on a SIGMA of 1e-20 and can only maintain 13 precise 
+               digits due to inherrent conversion to double. The aforementioned
+               solution does not, and is instead fully arbitrary. */
 public class Hexadecimal {
 
     static final int MAX_PRECISE_LENGTH = 13;
