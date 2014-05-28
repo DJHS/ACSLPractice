@@ -40,10 +40,7 @@ public class TestWithSigmaAdjustment {
                 String digitsReversed = new StringBuilder(digits).reverse().toString();
                 digits = new StringBuilder(digitsReversed.replaceFirst("[0]+", "")).reverse().toString();
             }
-			//digits= digits.substring(0,15);
-            //if(doesRepeat(digits, 1)){
-            //digits=reduceRepeat(digits);
-            //}
+
             if (digits.length() > 10) {
                 digits = digits.substring(0, 11);
             }
