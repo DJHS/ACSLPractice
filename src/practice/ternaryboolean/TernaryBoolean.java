@@ -1,4 +1,4 @@
-package freddy;
+package practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;

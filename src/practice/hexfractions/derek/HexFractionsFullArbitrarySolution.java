@@ -1,4 +1,4 @@
-package hexfractions;
+package practice.hexfractions.derek;
 
 import java.math.BigInteger;
 import java.math.BigDecimal;

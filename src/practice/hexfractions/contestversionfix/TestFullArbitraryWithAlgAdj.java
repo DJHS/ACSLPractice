@@ -1,43 +1,38 @@
-package hexfractions.contestversion;
+package practice.hexfcontestversionfixstversion;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class TestBigDecimal {
+public class TestFullArbitraryWithAlgAdj {
 
-    public static double sixTo = 1.0 / Math.pow(16, 20);
-    public static double SIGMA = 1e-15;
-    public static final BigDecimal SIXTEEN = new BigDecimal(16);
-    public static final BigDecimal INV_SIXTEEN = (BigDecimal.ONE.divide(SIXTEEN)).subtract(new BigDecimal(SIGMA));
+    static final BigDecimal SIXTEEN = new BigDecimal(16);
+    static final BigDecimal INV_SIXTEEN = BigDecimal.ONE.divide(SIXTEEN);
+    static final int MAX_DIGITS = 15;
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("BigDecimal Test");
         for (int i = 0; i < 10; i++) {
-            int numDigits = 1;
             int count = 0;
             String digits = ".";
             BigDecimal numToHex = new BigDecimal(scan.nextLine());
+            BigDecimal test;
             BigDecimal valToSubtract = INV_SIXTEEN;
-            double numToHexDouble;
-            while ((numToHexDouble = numToHex.abs().doubleValue()) > SIGMA /*sixTo*/) {
-                if (numToHexDouble > valToSubtract.doubleValue() && Math.abs(numToHexDouble - valToSubtract.doubleValue()) > SIGMA) {
-                    numToHex = numToHex.subtract(valToSubtract);
-                    count++;
-                } else {
-                    System.out.println("count = " + count);
+            while (digits.length() < MAX_DIGITS + 1) {
+                test = numToHex.subtract(valToSubtract);
+                int compare = test.compareTo(BigDecimal.ZERO);
+                if (compare < 0) {
                     digits += toHex(Integer.toString(count));
                     count = 0;
-                    numDigits = 0;
                     valToSubtract = valToSubtract.multiply(INV_SIXTEEN);
+                }else if(compare == 0){
+                    digits += toHex(Integer.toString(++count));
+                    break;
+                }else{
+                    count++;
+                    numToHex = test;
                 }
-
             }
-
-            //digits= digits.substring(0,15);
-            //if(doesRepeat(digits, 1)){
-            //digits=reduceRepeat(digits);
-            //}
+	    
             if (digits.length() > 10) {
                 digits = digits.substring(0, 11);
             }

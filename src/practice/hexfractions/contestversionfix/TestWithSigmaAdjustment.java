@@ -1,4 +1,4 @@
-package hexfractions.contestversion;
+package practice.hexfcontestversionfixstversion;
 
 import java.text.NumberFormat;
 import java.util.Scanner;

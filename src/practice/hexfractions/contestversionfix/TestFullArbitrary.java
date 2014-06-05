@@ -1,33 +1,31 @@
-package hexfractions.contestversion;
+package practice.hexfcontestversionfixstversion;
 
-import java.text.NumberFormat;
+import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class TestWithAlgAdjustment {
+public class TestFullArbitrary {
 
-    public static int MAX_DIGITS = 15;
+    static final BigDecimal SIXTEEN = new BigDecimal(16);
+    static final BigDecimal INV_SIXTEEN = BigDecimal.ONE.divide(SIXTEEN);
+    static final BigDecimal SIX_TO = INV_SIXTEEN.pow(20);
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {
             int count = 0;
             String digits = ".";
-            double numToHex = scan.nextDouble();
-            double test;
-            double valToSubtract = 1.0 / 16;
-            while (digits.length() < MAX_DIGITS + 1) {
-                test = numToHex - valToSubtract;
-                if(test < 0){
+            BigDecimal numToHex = new BigDecimal(scan.nextLine());
+            BigDecimal valToSubtract = INV_SIXTEEN;
+            while (numToHex.compareTo(SIX_TO) > 0) {
+                if (numToHex.compareTo(valToSubtract) > 0) {
+                    numToHex = numToHex.subtract(valToSubtract);
+                    count++;
+                } else {
                     digits += toHex(Integer.toString(count));
                     count = 0;
-                    valToSubtract *= (1.0 / 16);
-                }else if(test == 0){
-                    digits += toHex(Integer.toString(++count));
-                    break;
-                }else{
-                    count++;
-                    numToHex = test;
+                    valToSubtract = valToSubtract.multiply(INV_SIXTEEN);
                 }
+
             }
 
             if (digits.length() > 10) {

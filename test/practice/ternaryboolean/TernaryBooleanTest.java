@@ -1,5 +1,6 @@
-package freddy;
+package practice.ternaryboolean;
 
+import practice.TernaryBoolean;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
