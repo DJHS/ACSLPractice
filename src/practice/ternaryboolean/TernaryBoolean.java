@@ -1,4 +1,4 @@
-package practice;
+package practice.ternaryboolean;
 
 import java.util.ArrayList;
 import java.util.Arrays;

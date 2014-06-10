@@ -1,4 +1,4 @@
-package practice.hexfcontestversionfixstversion;
+package practice.hexfractions.contestversionfix;
 
 import java.math.BigDecimal;
 import java.util.Scanner;

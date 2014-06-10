@@ -1,3 +1,5 @@
+package denver2014.hexfractions;
+
 import java.text.NumberFormat;
 
 

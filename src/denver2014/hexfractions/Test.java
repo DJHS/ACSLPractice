@@ -1,4 +1,6 @@
-	import java.text.NumberFormat;
+package denver2014.hexfractions;
+
+import java.text.NumberFormat;
 import java.util.Scanner;
 public class Test {
 
