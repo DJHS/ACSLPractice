@@ -3,6 +3,9 @@ package denver2014.kenken;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author derek
+ */
 public class Section {
 	Grid grid;
 	int sum = -1;

@@ -2,6 +2,9 @@ package denver2014.kenken;
 
 import java.util.ArrayList;
 
+/**
+ * @author derek
+ */
 public class Grid extends ArrayList<Row> {
 
 	public Grid() {

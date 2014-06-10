@@ -3,6 +3,9 @@ package practice.hexfractions.contestversionfix;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
+/**
+ * @author derek
+ */
 public class TestWithAlgAdjustment {
 
     public static int MAX_DIGITS = 15;

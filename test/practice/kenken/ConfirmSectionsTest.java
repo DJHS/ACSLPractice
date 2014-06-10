@@ -11,7 +11,6 @@ import static practice.kenken.KenKen.confirmSections;
 
 
 /**
- *
  * @author derek
  */
 public class ConfirmSectionsTest {

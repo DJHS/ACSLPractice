@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-
+/**
+ * @author freddy
+ */
 public class TernaryBooleanTest {
 
 	@Test

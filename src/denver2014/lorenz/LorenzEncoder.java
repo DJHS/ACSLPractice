@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @author freddy
+ */
 public class LorenzEncoder {
 
 	public HashMap<Character, String> charbits;

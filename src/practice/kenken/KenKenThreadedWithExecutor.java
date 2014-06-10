@@ -13,6 +13,9 @@ import static practice.kenken.KenKen.createArr;
 import static practice.kenken.KenKen.createSections;
 import static practice.kenken.KenKen.printResult;
 
+/**
+ * @author derek
+ */
 public class KenKenThreadedWithExecutor extends Thread {
 
     static ThreadPoolExecutor executor;

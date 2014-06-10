@@ -2,6 +2,9 @@ package denver2014.lorenz;
 
 import java.util.Scanner;
 
+/**
+ * @author freddy
+ */
 public class LorenzDecoder {
 
 	public LorenzEncoder coding;

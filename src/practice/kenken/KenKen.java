@@ -7,6 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @author derek
+ */
+
 public class KenKen {
 
     public static void main(String[] args) throws IOException {

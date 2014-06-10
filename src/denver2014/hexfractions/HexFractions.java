@@ -2,7 +2,9 @@ package denver2014.hexfractions;
 
 import java.text.NumberFormat;
 
-
+/**
+ * @author ryan & tony
+ */
 public class HexFractions {
 	public static double sixTo =Math.pow(16, -20);
 	public static void main(String[] args){

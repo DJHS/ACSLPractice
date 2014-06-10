@@ -2,6 +2,10 @@ package denver2014.hexfractions;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
+
+/**
+ * @author ryan & tony
+ */
 public class Test {
 
 

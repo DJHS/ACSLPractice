@@ -3,6 +3,9 @@ package practice.kenken;
 import java.util.Arrays;
 import static practice.kenken.KenKen.increment;
 
+/**
+ * @author derek
+ */
 public class IncrementTest {
     public static void main(String[] args) {
         int[] test = new int[9];

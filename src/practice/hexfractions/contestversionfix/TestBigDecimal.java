@@ -3,6 +3,9 @@ package practice.hexfractions.contestversionfix;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+/**
+ * @author derek
+ */
 public class TestBigDecimal {
 
     public static double sixTo = 1.0 / Math.pow(16, 20);

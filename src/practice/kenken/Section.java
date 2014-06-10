@@ -3,6 +3,9 @@ package practice.kenken;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author derek
+ */
 public class Section {
     private List<Integer> targets;
     private int sum;

@@ -4,6 +4,9 @@ package denver2014.kenken;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * @author derek
+ */
 public class KenKen {
 
 	public static void main(String[] args) throws IOException {

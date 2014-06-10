@@ -3,6 +3,9 @@ package practice.hexfractions.contestversionfix;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+/**
+ * @author derek
+ */
 public class TestFullArbitraryWithAlgAdj {
 
     static final BigDecimal SIXTEEN = new BigDecimal(16);

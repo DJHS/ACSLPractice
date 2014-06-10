@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+/**
+ * Derek's original HexFractions solution
+ * @author derek
+ */
 public class Main {
 
     public static void main(String[] args) throws IOException{

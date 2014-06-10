@@ -4,6 +4,9 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+/**
+ * @author derek
+ */
 public class TestWithSigmaAdjustment {
 
     public static double sixTo = 1.0 / Math.pow(16, 20);

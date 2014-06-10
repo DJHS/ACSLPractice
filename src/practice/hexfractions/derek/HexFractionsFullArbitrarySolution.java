@@ -4,6 +4,9 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.*;
 
+/**
+ * @author derek
+ */
 public class HexFractionsFullArbitrarySolution {
 
     static final int MAX_COUNT = 20;

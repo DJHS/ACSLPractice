@@ -3,6 +3,10 @@ package practice.hexfractions.derek;
 import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.*;
+/**
+ * @author derek
+ * @deprecated
+ */
 @Deprecated /* See HexFractionsFullArbitrarySolution for a fully 
                arbitrary-precision solution to Hex Fractions, this solution
                depends on a SIGMA of 1e-20 and can only maintain 13 precise 
