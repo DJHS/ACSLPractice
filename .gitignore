@@ -2,8 +2,8 @@
 /bin/
 /nbproject/
 /dist/
-/.project
-/.classpath
 /build.xml
 /.settings
 /.git
+!.classpath
+!.project
