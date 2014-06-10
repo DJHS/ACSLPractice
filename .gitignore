@@ -1,9 +1,12 @@
+/.git
 /build/
-/bin/
 /nbproject/
 /dist/
 /build.xml
-/.settings
-/.git
-!.classpath
+/bin/
 !.project
+!.classpath
+/.settings
+/.idea
+/out/
+/ACSLPractice.iml
